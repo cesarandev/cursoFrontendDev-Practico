@@ -232,6 +232,65 @@ body {
     text-decoration: none;
 }
 
+/* mobile menu */
+
+.mobile-menu {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 24px;
+}
+
+.mobile-menu a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    /* margin-bottom: 24px; */
+}
+
+.mobile-menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-top: 24px;
+}
+
+.mobile-menu ul:last-child{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 24px;
+}
+
+.mobile-menu ul:first-child {
+    margin-top: 0px;
+}
+
+.mobile-menu ul:last-child li {
+    margin-bottom: 0px;
+}
+
+
+.mobile-menu ul li {
+    margin-bottom: 24px;
+}
+
+.mobile-menu ul:nth-child(1) {
+    border-bottom: 1px solid var(--very-light-pink);
+}
+
+.mobile-menu .email {
+    font-size: var(--sm);
+    font-weight: 300;
+}
+
+.mobile-menu .signout {
+    color: var(--hospital-green);
+    font-size: var(--sm);
+}
+
+
+
 @media (max-width: 640px) {
     .logo {
         display: block;

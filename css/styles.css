@@ -188,6 +188,50 @@ body {
     object-fit: cover;
 }
 
+/* desktop menu */
+
+.desktop-menu {
+    width: 100px;
+    height: auto;
+    border: 1px solid var(--very-light-pink);
+    padding: 20px 20px 0px 20px;
+    border-radius: 8px;
+}
+
+.desktop-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+} 
+
+
+.desktop-menu ul li {
+    text-align: end;
+} 
+
+.desktop-menu ul li:last-child {
+    padding-top: 20px;
+    border-top: 1px solid var(--very-light-pink);
+    color: var(--hospital-green);
+}
+
+.desktop-menu ul li:last-child a {
+    color: var(--hospital-green);
+    font-size: var(--sm);
+}
+
+.desktop-menu ul li a {
+    color: var(--black);
+    margin-bottom: 20px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+
+.desktop-menu ul li a {
+    text-decoration: none;
+}
+
 @media (max-width: 640px) {
     .logo {
         display: block;

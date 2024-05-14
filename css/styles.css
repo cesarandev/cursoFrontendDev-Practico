@@ -12,8 +12,6 @@
 
 body {
     font-family: 'Quicksand', sans-serif;
-    padding: 0;
-    margin: 0;
 }
 
 .login {
@@ -300,12 +298,13 @@ body {
 
 .myorder .title {
     font-size: var(--lg);
-    margin-bottom: 40px;
+    margin: 40px 0px 20px 0px;
     color: var(--black);
     text-align: start;
 }
 
 .myorder-container {
+    min-width: 320px;
     display: flex;
     flex-direction: column;
 }
@@ -319,6 +318,30 @@ body {
     margin-bottom: 16px;
     padding: 0px 16px;
     border-radius: 8px;
+}
+
+.myorder-content--orders {
+    background-color: var(--white);
+    padding: 0;
+    margin-bottom: 0px;
+}
+
+.myorder-content--orders p:last-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.myorder-content--orders p:last-child span {
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+    background-position: center;
+    background-image: url('../icons/flechita.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .myorder-content p:first-child {
@@ -345,6 +368,7 @@ body {
     grid-template-columns: auto 1fr auto auto;
     gap: 16px;
     margin-bottom: 16px;
+    align-items: center;
 }
 
 .cart-element p:nth-child(2) {
